@@ -23,7 +23,7 @@
 
 ## Features
 
-- TODO
+Just testing things out atm...
 
 ## Requirements
 
