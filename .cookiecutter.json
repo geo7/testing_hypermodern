@@ -1,0 +1,14 @@
+{
+  "_output_dir": "/Users/g/GSL/projects",
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "George Lenton",
+  "copyright_year": "2022",
+  "development_status": "Development Status :: 1 - Planning",
+  "email": "georgelenton@gmail.com",
+  "friendly_name": "Testing_Hypermodern",
+  "github_user": "geo7",
+  "license": "MIT",
+  "package_name": "testing_hypermodern",
+  "project_name": "testing_hypermodern",
+  "version": "0.0.0"
+}
