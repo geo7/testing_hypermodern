@@ -197,7 +197,9 @@ def typeguard(session: Session) -> None:
 def tea_party(session: Session) -> None:
     """Silly test example"""
     session.install(".")
+    print("-------------------")
     print("This is a tea party")
+    print("-------------------")
     # session.install("pytest", "typeguard", "pygments")
     # print("pytest", f"--typeguard-packages={package}", *session.posargs)
     # session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
