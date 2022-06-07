@@ -27,6 +27,7 @@ jobs:
           - { python: "3.10", os: "ubuntu-latest", session: "typeguard" }
           - { python: "3.10", os: "ubuntu-latest", session: "xdoctest" }
           - { python: "3.10", os: "ubuntu-latest", session: "docs-build" }
+          - { python: "3.10", os: "ubuntu-latest", session: "tea_party" }
 
     env:
       NOXSESSION: ${{ matrix.session }}
