@@ -33,6 +33,7 @@ nox.options.sessions = (
     "typeguard",
     "xdoctest",
     "docs-build",
+    'tea_party',
 )
 
 
@@ -189,6 +190,15 @@ def typeguard(session: Session) -> None:
     session.install("pytest", "typeguard", "pygments")
     print("pytest", f"--typeguard-packages={package}", *session.posargs)
     session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
+
+@session(python=python_versions[0])
+def tea_party(session: Session) -> None:
+    """Silly test example"""
+    session.install(".")
+    print("This is a tea party")
+    # session.install("pytest", "typeguard", "pygments")
+    # print("pytest", f"--typeguard-packages={package}", *session.posargs)
+    # session.run("pytest", f"--typeguard-packages={package}", *session.posargs)
 
 
 @session(python=python_versions)
