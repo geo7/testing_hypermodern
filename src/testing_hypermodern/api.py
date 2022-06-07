@@ -1,7 +1,8 @@
 from typeguard import typechecked
 
+
 @typechecked
-def something(a : int) -> None:
+def something(a: int) -> None:
 
     if a > 20:
         print("a is greater than 20")

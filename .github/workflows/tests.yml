@@ -54,8 +54,14 @@ jobs:
           import os
           import pip
 
+          github_env = os.environ["GITHUB_ENV"]
+          print(f"github env is : {github_env}")
+          print(f"pip.__version__ is {pip.__version__}")
+
           with open(os.environ["GITHUB_ENV"], mode="a") as io:
               print(f"VIRTUALENV_PIP={pip.__version__}", file=io)
+              print(f"VIRTUALENV_PIP={pip.__version__}", file=io)
+              print('='*50)
 
       - name: Install Poetry
         run: |
